@@ -46,9 +46,9 @@ mount /dev/sda1 /mnt/gentoo/boot
 cd /mnt/gentoo
 # Download hardened Stage 3 Tar
 
-wget --debug --verbose -O stage3-amd64-hardened.tar.xz 'https://bouncer.gentoo.org/fetch/root/all/releases/amd64/autobuilds/20200618T170443Z/install-amd64-minimal-20200618T170443Z.iso'
+wget --debug --verbose -O stage3-amd64.tar.xz 'http://gentoo.mirrors.tera-byte.com/releases/amd64/autobuilds/current-stage3-amd64/stage3-amd64-20200621T214503Z.tar.xz'
 #UnTar Stage 3
-tar xpvf stage3-amd64-hardened.tar.xz --xattrs-include='*.*' --numeric-owner
+tar xpvf stage3-amd64.tar.xz --xattrs-include='*.*' --numeric-owner
 
 ntpd -q -g
 
